@@ -1,0 +1,152 @@
+.first-screen {
+  background: url("../img/index-first-screen-background.png") 0 0 no-repeat;
+  min-height: 720px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.first-screen__body {
+  padding: 230px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 490px;
+}
+
+.first-screen__title {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.first-screen__subtitle {
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.first-screen__button a {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  display: inline-block;
+  background: rgba(217, 217, 217, 0.9);
+  padding: 15px 50px;
+  text-decoration: none;
+  color: black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.first-screen__button a:hover {
+  background: rgba(178, 178, 178, 0.9);
+  box-shadow: 2px 2px 15px 6px rgba(70, 70, 70, 0.4);
+  display: inline-block;
+  transition: all 0.3s ease-out;
+}
+
+.second-screen__title {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 21px;
+  border-bottom: 3px solid #ffffff;
+}
+.second-screen__subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 5px;
+  color: #ffffff;
+}
+.second-screen__body {
+  align-items: center;
+  margin: 0 auto;
+}
+.second-screen {
+  background: url(../img/index-second-screen-background.jpg) 0 0 / cover
+    no-repeat;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.second-screen__row {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 25px;
+  justify-content: space-between;
+  margin: 39px 0 0 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.second-screen__category-card {
+  height: 282px;
+  width: 220px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.category-name {
+  text-align: center;
+  padding-top: 10px;
+  display: block;
+  height: 44px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: white;
+  text-transform: uppercase;
+}
+.restaurant {
+  background: url(../img/index-category-restaurant.jpg);
+  background-position: 250px 300px;
+}
+.park {
+  background: url(../img/index-category-park.png) no-repeat;
+}
+
+.second-screen__category-card.sight {
+  background: url(../img/index-category-sight.jpg) no-repeat;
+  background-position: center;
+}
+
+.second-screen__category-card.museums {
+  background: url(../img/index-category-museum.webp);
+}
+
+@media (max-width: 460px) {
+  .second-screen__row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
